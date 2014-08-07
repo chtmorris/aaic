@@ -679,22 +679,30 @@ footer p {
 
 .about .teams {
     color: #202020;
-    background: #FFF;
+    background: #eceff1;
     margin-bottom: 40px;
     position: relative;
     z-index: 1;
 }
+
+.about .teams .desc p {
+    margin-bottom: 20px;
+    /*z-index: 10;*/
+}
+
 .about .teams .pict {
     position: relative;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    text-align: center;
 }
 .about .teams .pict img {
     position: relative;
     z-index: -1;
     max-width: 100%;
-    width: 100%;
+    width: 50%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
 }
-
 .teams .pict {
     display: block;
     position: absolute;
@@ -702,7 +710,26 @@ footer p {
     height: 100%;
     left: 0;
     top: 0;
-    background:rgba(255, 255, 255, 0.26);
+    /*background:rgba(255, 255, 255, 0.26);*/
+}
+
+.about .teams .pict .overlay {
+    position: relative;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    max-width: 50%;
+    width: 50%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 25%;
+    top: 0;
+    background:rgba(255, 255, 255, 0.2);
 }
 
 .about .teams h3 {
@@ -712,6 +739,7 @@ footer p {
 }
 .about .teams .desc {
     padding:25px;
+    background: #eceff1;
 }
 .about .teams span {
     font-size: 13px;
