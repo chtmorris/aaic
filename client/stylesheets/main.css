@@ -376,11 +376,10 @@ footer p {
     display: block;
     position: absolute;
     width: 100%;
-    /*height: 100%;*/
+    height: 100%;
     left: 0;
     top: 0;
-    /*background:rgba(38, 41, 46, 0.7);*/
-    background: white;
+    background:rgba(38, 41, 46, 0.3);
 }
 .home .slide-text {
     position: absolute;

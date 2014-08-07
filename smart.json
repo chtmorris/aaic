@@ -2,6 +2,7 @@
   "packages": {
     "bootstrap-3": {},
     "jqueryui": {},
-    "font-awesome": {}
+    "font-awesome": {},
+    "magnific-popup": {}
   }
 }
