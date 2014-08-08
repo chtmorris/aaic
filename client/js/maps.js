@@ -1,50 +1,67 @@
 $(document).ready(function() {
   function initialize() {
-
-    var styles = [
-    {
-      stylers: [
-        // { hue: "#00ffe6" },
-        { saturation: 0 }
-      ]
-    },{
-      featureType: "road",
-      elementType: "geometry",
-      stylers: [
-        { lightness: 100 },
-        { visibility: "simplified" }
-      ]
-    },{
-      featureType: "road",
-      elementType: "labels",
-      stylers: [
-        { visibility: "off" }
-      ]
-    }
-  ];
-
-  // Create a new StyledMapType object, passing it the array of styles,
-    // as well as the name to be displayed on the map type control.
-    var styledMap = new google.maps.StyledMapType(styles,
-      {name: "Styled Map"});
-
-    // Create a map object, and include the MapTypeId to add
-    // to the map type control.
     var mapOptions = {
       zoom: 2,
-      center: new google.maps.LatLng(22.24, 0),
-      mapTypeControlOptions: {
-        mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
-      }
+      center: new google.maps.LatLng(22.24, 0)
     };
+
     var map = new google.maps.Map(document.getElementById('map'),
-      mapOptions);
+        mapOptions);
 
-    //Associate the styled map with the MapTypeId and set it to display.
-    map.mapTypes.set('map_style', styledMap);
-    map.setMapTypeId('map_style');
+    var insighthk = new google.maps.Marker({
+      position: new google.maps.LatLng(22.400053, 114.192587),
+      map: map,
+      title: 'Insight Robotics'
+    });
+
+    var insightchina = new google.maps.Marker({
+      position: new google.maps.LatLng(22.7881494,113.5490371),
+      map: map,
+      title: 'Insight Robotics'
+    });
+
+    var snaptee = new google.maps.Marker({
+      position: new google.maps.LatLng(22.336358,114.1465404),
+      map: map,
+      title: 'Snaptee'
+    });
+
+    var aidyia = new google.maps.Marker({
+      position: new google.maps.LatLng(22.307383,114.223257),
+      map: map,
+      title: 'Aidyia'
+    });
+
+    var playto = new google.maps.Marker({
+      position: new google.maps.LatLng(22.2764257,114.1692495),
+      map: map,
+      title: 'Playto'
+    });
+
+    var mongolia = new google.maps.Marker({
+      position: new google.maps.LatLng(47.8916501,106.9018714),
+      map: map,
+      title: 'AAIC Mongolia'
+    });
+
+    var DS = new google.maps.Marker({
+      position: new google.maps.LatLng(34.067435, -84.061369),
+      map: map,
+      title: 'DraftServ'
+    });
+
+    google.maps.event.addListener(map, 'center_changed', function() {
+      // 3 seconds after the center of the map has changed, pan back to the
+      // marker.
+      window.setTimeout(function() {
+        map.panTo(marker.getPosition());
+      }, 3000);
+    });
+
+    google.maps.event.addListener(marker1, 'click', function() {
+      map.setZoom(8);
+      map.setCenter(marker.getPosition());
+    });
   }
-
   google.maps.event.addDomListener(window, 'load', initialize);
-
 });
