@@ -58,10 +58,6 @@ $(document).ready(function() {
       }, 3000);
     });
 
-    google.maps.event.addListener(marker1, 'click', function() {
-      map.setZoom(8);
-      map.setCenter(marker.getPosition());
-    });
   }
   google.maps.event.addDomListener(window, 'load', initialize);
 });
