@@ -91,8 +91,3 @@ dp(document).ready(function() {
 dp(window).load(function() {
     dp('#loader').fadeOut(1000, "linear");
 });
-
-$(document).ready(function() {
-  $('.image-link').magnificPopup({type:'image'});
-  console.log("testing popup");
-});
