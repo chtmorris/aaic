@@ -1,0 +1,152 @@
+<template name="layout">
+    <div id="loader"></div>
+    <div id="main-wrapper">
+        <div id="sidebar">
+
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html#">
+                        <!-- <img src="images/logo.png" alt="logo garis"> -->
+                        <span class="blue-word">AAIC</span> Ventures
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a class="sscroll" href="index.html#home">Home</a>
+                        </li>
+                        <li><a class="sscroll" href="index.html#portfolio">Portfolio</a>
+                        </li>
+                        <li><a class="sscroll" href="index.html#about">About us</a>
+                        </li>
+                        <li><a class="sscroll" href="index.html#services">News</a>
+                        </li>
+                        <li><a class="sscroll" href="index.html#blog-front">Jobs</a>
+                        </li>
+                        <li><a class="sscroll" href="index.html#footprint">Footprint</a>
+                        </li>
+                        <li><a class="sscroll" href="index.html#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+
+        <div id="container">
+
+            {{> yield}}
+
+        </div>
+    </div>
+
+    <div class="totop" id="backtotop">
+        <span>
+            <a href="index.html#home" class="first sscroll"><i class="fa fa-angle-up"></i></a>
+            <a href="index.html#home" class="hover sscroll"><i class="fa fa-angle-up"></i></a>
+        </span>
+    </div>
+    <script>
+    var dp = jQuery;
+    dp.noConflict();
+    dp(document).ready(function() {
+
+        //SMOOTH SCROLL
+        dp('.sscroll').bind('click.smoothscroll', function(e) {
+            e.preventDefault();
+            dp('html,body').animate({
+                scrollTop: dp(this.hash).offset().top
+            }, 1200);
+        });
+        //RESPONSIVE VIDEO
+        if(dp.fn.fitVids){
+            dp('.fitvids').fitVids();
+        }
+        //BIG SLIDE
+        dp('#home-slide').superslides({
+            animation: 'fade', // You can choose either fade or slide
+            play: 6000,
+            pagination: false
+        });
+        //SERVICES SLIDER
+        dp("#slider-services").sudoSlider({
+            speed: 650,
+            auto: true,
+            pause: 3000,
+            prevNext: false,
+            responsive: true,
+            useCSS: true,
+            continuous: true,
+            effect: "slide",
+            updateBefore: true
+        });
+        //PORTFOLIO
+        dp('.portfolioContainer').mixitup({
+            filterSelector: '.portfolioFilter a',
+            targetSelector: '.portfolio-item',
+            effects: ['fade', 'scale']
+        });
+        //QUOTE SLIDE
+        dp("#quote-slider").sudoSlider({
+            customLink: 'a.quoteLink',
+            speed: 425,
+            prevNext: true,
+            responsive: true,
+            prevHtml: '<a href="#" class="quote-left-indicator"><i class="fa fa-angle-left"></i></a>',
+            nextHtml: '<a href="#" class="quote-right-indicator"><i class="fa fa-angle-right"></i></a>',
+            useCSS: true,
+            continuous: true,
+            effect: "fadeOutIn",
+            updateBefore: true
+        });
+
+        //  Responsive layout, resizing the items
+        if (dp('.client-slider').length > 0) {
+            dp('.client-slider').carouFredSel({
+                responsive: true,
+                width: '100%',
+                scroll: 1,
+                items: {
+                    width: 116,
+                    //  height: '30%',  //  optionally resize item-height
+                    visible: {
+                        min: 1,
+                        max: 5
+                    }
+                }
+            });
+        }
+
+        //BACK TO TOP
+        dp("#backtotop").backToTop();
+        //CALL TO ACTION
+        /*
+        var bg_img = dp(".call-ta").attr('data-background');
+        dp(".call-ta").backstretch(bg_img);
+        */
+        //JQUERY Mobile Devices Responsive
+        dp('body').mobileResponsive();
+
+
+        //Bootstrap Tooltip
+        dp('a[data-toggle="tooltip"]').tooltip();
+        //NIVOLightbox
+        if(dp.fn.nivoLightbox){
+            dp('.popup').nivoLightbox({
+                effect: 'fall'
+            });
+        }
+    });
+    dp(window).load(function() {
+        dp('#loader').fadeOut(1000, "linear");
+    });
+    </script>
+</template>

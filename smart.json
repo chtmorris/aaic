@@ -5,6 +5,7 @@
     "font-awesome": {},
     "magnific_popup": {
       "git": "https://github.com/Konecty/meteor-magnific-popup.git"
-    }
+    },
+    "iron-router": {}
   }
 }
