@@ -56,13 +56,13 @@ $(document).ready(function() {
       title: 'DraftServ'
     });
 
-    google.maps.event.addListener(map, 'center_changed', function() {
-      // 3 seconds after the center of the map has changed, pan back to the
-      // marker.
-      window.setTimeout(function() {
-        map.panTo(marker.getPosition());
-      }, 3000);
-    });
+    // google.maps.event.addListener(map, 'center_changed', function() {
+    //   // 3 seconds after the center of the map has changed, pan back to the
+    //   // marker.
+    //   window.setTimeout(function() {
+    //     map.panTo(marker.getPosition());
+    //   }, 3000);
+    // });
 
   }
   google.maps.event.addDomListener(window, 'load', initialize);

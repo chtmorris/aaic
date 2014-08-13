@@ -741,6 +741,11 @@ footer p {
     padding:25px;
     background: #eceff1;
 }
+
+.about .teams .desc .jobsboard{
+  padding-bottom: 45px;
+}
+
 .about .teams span {
     font-size: 13px;
     font-weight: 700;
@@ -814,6 +819,17 @@ footer p {
     z-index: 1;
     margin-bottom: 40px;
 }
+
+.news-title{
+  margin-top: -42px;
+  margin-bottom: -60px;
+}
+
+.resize{
+    max-height: 195px;
+    overflow: hidden;
+}
+
 .blog-front article .blog-thumb {
     position: relative;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
