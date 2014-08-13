@@ -1,16 +1,12 @@
 <template name="news">
 
-  <div id="sidebar">
+    <div id="sidebar">
+        {{> nonhomenav}}
+    </div>
 
-      {{> nonhomenav}}
-
-  </div>
-
-  <div id="container">
-
-    {{> newsposts}}
-
-  </div>
+    <div id="container">
+      {{> newsposts}}
+    </div>
 
   <script>
   var dp = jQuery;
