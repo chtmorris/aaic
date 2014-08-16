@@ -1,26 +1,26 @@
-var dp = jQuery;
-dp.noConflict();
-dp(document).ready(function() {
+// var $ = jQuery;
+// $.noConflict();
+$(document).ready(function() {
 
     //SMOOTH SCROLL
-    dp('.sscroll').bind('click.smoothscroll', function(e) {
+    $('.sscroll').bind('click.smoothscroll', function(e) {
         e.preventDefault();
-        dp('html,body').animate({
-            scrollTop: dp(this.hash).offset().top
+        $('html,body').animate({
+            scrollTop: $(this.hash).offset().top
         }, 1200);
     });
     //RESPONSIVE VIDEO
-    if(dp.fn.fitVids){
-        dp('.fitvids').fitVids();
+    if($.fn.fitVids){
+        $('.fitvids').fitVids();
     }
     //BIG SLIDE
-    dp('#home-slide').superslides({
+    $('#home-slide').superslides({
         animation: 'fade', // You can choose either fade or slide
         play: 6000,
         pagination: false
     });
     //SERVICES SLIDER
-    dp("#slider-services").sudoSlider({
+    $("#slider-services").sudoSlider({
         speed: 650,
         auto: true,
         pause: 3000,
@@ -32,13 +32,13 @@ dp(document).ready(function() {
         updateBefore: true
     });
     //PORTFOLIO
-    dp('.portfolioContainer').mixitup({
+    $('.portfolioContainer').mixitup({
         filterSelector: '.portfolioFilter a',
         targetSelector: '.portfolio-item',
         effects: ['fade', 'scale']
     });
     //QUOTE SLIDE
-    dp("#quote-slider").sudoSlider({
+    $("#quote-slider").sudoSlider({
         customLink: 'a.quoteLink',
         speed: 425,
         prevNext: true,
@@ -52,8 +52,8 @@ dp(document).ready(function() {
     });
 
     //  Responsive layout, resizing the items
-    if (dp('.client-slider').length > 0) {
-        dp('.client-slider').carouFredSel({
+    if ($('.client-slider').length > 0) {
+        $('.client-slider').carouFredSel({
             responsive: true,
             width: '100%',
             scroll: 1,
@@ -69,25 +69,25 @@ dp(document).ready(function() {
     }
 
     //BACK TO TOP
-    dp("#backtotop").backToTop();
+    $("#backtotop").backToTop();
     //CALL TO ACTION
     /*
-    var bg_img = dp(".call-ta").attr('data-background');
-    dp(".call-ta").backstretch(bg_img);
+    var bg_img = $(".call-ta").attr('data-background');
+    $(".call-ta").backstretch(bg_img);
     */
     //JQUERY Mobile Devices Responsive
-    dp('body').mobileResponsive();
+    $('body').mobileResponsive();
 
 
     //Bootstrap Tooltip
-    dp('a[data-toggle="tooltip"]').tooltip();
+    $('a[data-toggle="tooltip"]').tooltip();
     //NIVOLightbox
-    if(dp.fn.nivoLightbox){
-        dp('.popup').nivoLightbox({
+    if($.fn.nivoLightbox){
+        $('.popup').nivoLightbox({
             effect: 'fall'
         });
     }
 });
-dp(window).load(function() {
-    dp('#loader').fadeOut(1000, "linear");
+$(window).load(function() {
+    $('#loader').fadeOut(1000, "linear");
 });
