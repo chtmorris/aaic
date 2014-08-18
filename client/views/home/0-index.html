@@ -30,27 +30,29 @@
   </div>
 
   <script>
-  $(document).ready(function() {
+  var dp = jQuery;
+  dp.noConflict();
+  dp(document).ready(function() {
 
       //SMOOTH SCROLL
-      $('.sscroll').bind('click.smoothscroll', function(e) {
+      dp('.sscroll').bind('click.smoothscroll', function(e) {
           e.preventDefault();
-          $('html,body').animate({
-              scrollTop: $(this.hash).offset().top
+          dp('html,body').animate({
+              scrollTop: dp(this.hash).offset().top
           }, 1200);
       });
       //RESPONSIVE VIDEO
-      if($.fn.fitVids){
-          $('.fitvids').fitVids();
+      if(dp.fn.fitVids){
+          dp('.fitvids').fitVids();
       }
       //BIG SLIDE
-      $('#home-slide').superslides({
+      dp('#home-slide').superslides({
           animation: 'fade', // You can choose either fade or slide
           play: 6000,
           pagination: false
       });
       //SERVICES SLIDER
-      $("#slider-services").sudoSlider({
+      dp("#slider-services").sudoSlider({
           speed: 650,
           auto: true,
           pause: 3000,
@@ -62,13 +64,13 @@
           updateBefore: true
       });
       //PORTFOLIO
-      $('.portfolioContainer').mixitup({
+      dp('.portfolioContainer').mixitup({
           filterSelector: '.portfolioFilter a',
           targetSelector: '.portfolio-item',
           effects: ['fade', 'scale']
       });
       //QUOTE SLIDE
-      $("#quote-slider").sudoSlider({
+      dp("#quote-slider").sudoSlider({
           customLink: 'a.quoteLink',
           speed: 425,
           prevNext: true,
@@ -82,8 +84,8 @@
       });
 
       //  Responsive layout, resizing the items
-      if ($('.client-slider').length > 0) {
-          $('.client-slider').carouFredSel({
+      if (dp('.client-slider').length > 0) {
+          dp('.client-slider').carouFredSel({
               responsive: true,
               width: '100%',
               scroll: 1,
@@ -99,27 +101,27 @@
       }
 
       //BACK TO TOP
-      $("#backtotop").backToTop();
+      dp("#backtotop").backToTop();
       //CALL TO ACTION
       /*
-      var bg_img = $(".call-ta").attr('data-background');
-      $(".call-ta").backstretch(bg_img);
+      var bg_img = dp(".call-ta").attr('data-background');
+      dp(".call-ta").backstretch(bg_img);
       */
       //JQUERY Mobile Devices Responsive
-      $('body').mobileResponsive();
+      dp('body').mobileResponsive();
 
 
       //Bootstrap Tooltip
-      $('a[data-toggle="tooltip"]').tooltip();
+      dp('a[data-toggle="tooltip"]').tooltip();
       //NIVOLightbox
-      if($.fn.nivoLightbox){
-          $('.popup').nivoLightbox({
+      if(dp.fn.nivoLightbox){
+          dp('.popup').nivoLightbox({
               effect: 'fall'
           });
       }
   });
-  $(window).load(function() {
-      $('#loader').fadeOut(1000, "linear");
+  dp(window).load(function() {
+      dp('#loader').fadeOut(1000, "linear");
   });
   </script>
 
