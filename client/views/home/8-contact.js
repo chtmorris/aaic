@@ -1,11 +1,11 @@
 Template.contact.rendered = function(){
 
-	$('#submitButton').click(function(){
+	dp('#submitButton').click(function(){
 		console.log("clicked");
 		var emailContents = {};
-		emailContents.email = $('input[name="email"]').val();
-		emailContents.subject = $('input[name="subject"]').val();
-		emailContents.message = $('textarea[name="message"]').val();
+		emailContents.email = dp('input[name="email"]').val();
+		emailContents.subject = dp('input[name="subject"]').val();
+		emailContents.message = dp('textarea[name="message"]').val();
 
 		console.log(emailContents);
 
