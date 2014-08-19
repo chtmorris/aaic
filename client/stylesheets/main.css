@@ -737,12 +737,18 @@ footer p {
     color: #202020;
     font-weight: 400;
 }
+
 .about .teams .desc {
     padding:25px;
     background: #eceff1;
 }
 
-.about .teams .desc .jobsboard{
+.about .teams .job-boarder {
+    padding:25px;
+    background: #f7f8f9;
+}
+
+.about .teams .jobsboard{
   padding-bottom: 45px;
 }
 
@@ -814,14 +820,23 @@ footer p {
     display: inline-block;
 }
 /* ====== Blog Front ====== */
- .blog-front article {
+
+.read-stories{
+    margin-top: -120px !important;
+}
+
+.find-jobs{
+    margin-top: -125px !important;
+}
+
+.blog-front article {
     position: relative;
     z-index: 1;
     margin-bottom: 40px;
 }
 
 .news-title{
-  margin-top: -42px;
+  margin-top: 0px;
   margin-bottom: -60px;
 }
 
