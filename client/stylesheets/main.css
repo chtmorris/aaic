@@ -1765,6 +1765,14 @@ border: 1px solid #fff;
 background-color: #f9f9f9;
 }
 
+/*----- NOT FOUND -----*/
+
+.notfound {
+  margin: 100px;
+  padding-top: 100px;
+  text-align: center;
+}
+
 a{color:#3498db;}
 #sidebar .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{color:#3498db;}
 .footer-toogle .hover i{color:#3498db;}
