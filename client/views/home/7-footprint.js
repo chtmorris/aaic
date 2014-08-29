@@ -1,28 +1,13 @@
-<template name="footprint">
-  <section id="footprint" class="services">
-      <div class="row">
-          <div class="col-md-12">
-              <div class="header-content">
-                  <h2>Footprint</h2>
-                  <h3><span class="blue-word">AAIC portfolio</span> global reach
-                  </h3>
-              </div>
-          </div>
-      </div>
-  </section>
-    <section class="map" id="map">
-  </section>
+Template.footprint.rendered = function(){
 
-<!--   <script>
-  $(document).ready(function() {
+		// Declaring a new function called 'initialize'
     function initialize() {
       var mapOptions = {
         zoom: 2,
         center: new google.maps.LatLng(22.24, 0)
       };
 
-      var map = new google.maps.Map(document.getElementById('map'),
-          mapOptions);
+      var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
       // var insightContent = '<div id="content">'+
       // '<div id="siteNotice">'+
@@ -90,9 +75,9 @@
 
     }
 
-    google.maps.event.addDomListener(window, 'load', initialize);
-  });
+    // Got rid of Gmap's Window Load event listener - not needed with Meteor's
+    // Template.footprint.rendered since this code will only run when the 
+    // template is rendered (and by extension, the window is loaded).
+    initialize();
 
-  </script> -->
-
-</template>
+};
