@@ -680,7 +680,7 @@ footer p {
 
 .about .teams {
     color: #202020;
-    background: #eceff1;
+    background: #f7f8f9;
     margin-bottom: 40px;
     position: relative;
     z-index: 1;
@@ -741,7 +741,7 @@ footer p {
 
 .about .teams .desc {
     padding:25px;
-    background: #eceff1;
+    background: #f7f8f9;
 }
 
 .about .teams .job-boarder {
@@ -824,6 +824,7 @@ footer p {
 
 .read-stories{
     margin-top: -120px !important;
+    background: #eceff1 !important;
 }
 
 .find-jobs{
