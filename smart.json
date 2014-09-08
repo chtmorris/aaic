@@ -4,6 +4,7 @@
     "jqueryui": {},
     "font-awesome": {},
     "iron-router": {},
-    "spin": {}
+    "spin": {},
+    "accounts-ui-bootstrap-dropdown": {}
   }
 }

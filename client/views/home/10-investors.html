@@ -1,0 +1,49 @@
+<template name="admin">
+
+  <div id="sidebar">
+      {{> investornav}}
+  </div>
+
+
+  <div id="container">
+    <section id="newsuploads" class="contact odd">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="header-content">
+              <h2>News uploader</h2>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-8">
+            <div class="form-group row">
+                <div class="col-md-8">
+                    <input type="text" name="title" class="form-control cmform col-md-6" id="newstitle" placeholder="News title">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-8">
+                    <input type="text" name="date" class="form-control cmform" id="newsdate" placeholder="Date">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-8">
+                    <input type="text" name="link" class="form-control cmform" id="newslink" placeholder="Link to article">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-8">
+                    <input type="text" name="image" class="form-control cmform" id="newsimage" placeholder="Link to image">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-11">
+                    <textarea class="form-control cmform" name="paragraph" id="news paragraph" placeholder="One paragraph summary" rows="10"></textarea>
+                </div>
+            </div>
+            <br/>
+            <button id="submitButton" class="btn btn-light big">Upload news story</button>
+          </div>
+      </div>
+    </section>
+  </div>
+
+</template>

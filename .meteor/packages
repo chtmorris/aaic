@@ -12,3 +12,5 @@ iron-router
 spin
 jquery
 email
+accounts-ui-bootstrap-dropdown
+accounts-password
