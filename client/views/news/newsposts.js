@@ -1,0 +1,1 @@
+Template.newsposts.helpers({   posts: function() {    return Posts.find();  }});
