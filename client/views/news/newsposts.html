@@ -1,5 +1,4 @@
 <template name="newsposts">
-
   <section id="blog-front" class="blog-front odd">
     <div class="row">
         <div class="col-md-12 mg-bt-80">
@@ -7,54 +6,32 @@
                 <h2>AAIC <span class="blue-word">community</span> news</h2>
             </div>
         </div>
-    </div>
+    </div>  
     <div class="row">
-        <article class="col-md-4 col-sm-6">
-            <figure class="blog-thumb resize">
-                <img src="http://cdn.aplista.iza.ne.jp/photos/2014/07/0443-377x670.png" alt="blog-thumb">
-            </figure>
-            <div class="post-area">
-                <a href="blog-post.html">
-                    <h4>アプリ1つでTシャツのデザインから発注までが可能！</h4>
-                </a>
-                <span class="post-date">August 9 2014</span>
-                <p class="post-content">Tシャツのデザインというのは本当に多種多様なものが存在していますが、自分の好きなデザインのTシャツが簡単に作れたら便利ですよね。店舗に足を運んで画像データなどを渡し、プリントTシャツを作成してもらうという手法は昔から存在していると思います。</p>
-                <a class="btn btn-light small popup" href="http://aplista.iza.ne.jp/r-all/173777">Read More</a>
-            </div>
-        </article>
-
-        <article class="col-md-4 col-sm-6">
-            <figure class="blog-thumb">
-                <img src="http://cbsla.files.wordpress.com/2013/10/173321254.jpg?w=620&h=349&crop=1" alt="blog-thumb">
-            </figure>
-            <div class="post-area">
-                <a href="blog-post.html">
-                    <h4>Top 5 Things Fans Want To See At Dodger Stadium</h4>
-                </a>
-                <span class="post-date">July 15 2014</span>
-                <p class="post-content">The second-most popular thing fans want at Dodger Stadium, with 15 percent of the total vote, is the addition of self-service beer vending machines. Target Field, home of the Minnesota Twins, will be one of the first sports venues in the United States to introduce the machines.</p>
-                <a class="btn btn-light small popup" href="http://losangeles.cbslocal.com/2014/07/15/top-5-things-fans-want-at-dodger-stadium/">Read More</a>
-            </div>
-        </article>
-
-        <article class="col-md-4 col-sm-6">
-            <figure class="blog-thumb">
-                <img src="http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/07/11/101829440-Self-Serve_Beer_Stations_at_Target_Field.530x298.JPG?v=1405351565" alt="blog-thumb">
-            </figure>
-            <div class="post-area">
-                <a href="blog-post.html">
-                    <h4>Drink up: Self-serve beer hits MLB's All-Star game</h4>
-                </a>
-                <span class="post-date">July 14 2014</span>
-                <p class="post-content">Target Field, home of the Minnesota Twins, has installed two self-serve beer machines made by Draft Serv. Fans at Tuesday night's Major League Baseball All-Star Game will get to pour themselves draft beer with the only self-serve technology in major American sports.</p>
-                <a class="btn btn-light small popup" href="http://www.cnbc.com/id/101829211">Read More</a>
-            </div>
-        </article>
-
-        <!-- ADD NEW TEMPLATE HERE FOR MORE STORIES ON NEWS PAGE  -->
-        <!-- WILL NEED TO ADD JS TO ONLY SHOW ON NEWS URL -->
-
+      {{#each posts}}
+        {{> postItem}}
+      {{/each}}
     </div>
   </section>
-
 </template>
+
+
+<template name="postItem">
+  <article class="col-md-4 col-sm-6">
+      <figure class="blog-thumb resize">
+          <img src="{{image}}" alt="blog-thumb">
+      </figure>
+      <div class="post-area">
+          <a href="blog-post.html">
+              <h4>{{title}}</h4>
+          </a>
+          <span class="post-date">{{date}}</span>
+          <p class="post-content">{{paragraph}}</p>
+          <a class="btn btn-light small popup" href="{{link}}">Read More</a>
+      </div>
+  </article>
+</template>
+
+
+<!-- ADD NEW TEMPLATE HERE FOR MORE STORIES ON NEWS PAGE  -->
+<!-- WILL NEED TO ADD JS TO ONLY SHOW ON NEWS URL -->
