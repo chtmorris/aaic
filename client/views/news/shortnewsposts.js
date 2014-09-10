@@ -1,0 +1,1 @@
+Template.shortnewsposts.helpers({  posts: function() {    return Posts.find({homepage: "On homepage"});  }});
