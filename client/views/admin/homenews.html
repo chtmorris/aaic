@@ -1,0 +1,16 @@
+<template name="homenews">
+
+  <div class="row homenewscontainer">
+    <div class="col-md-12">
+      <div class="header-content">
+        <h3>News on homepage</h3>
+      </div>
+
+        {{#each posts}}
+          {{> postDetails}}
+        {{/each}}
+
+    </div>
+  </div>
+
+</template>

@@ -842,6 +842,24 @@ footer p {
   margin-bottom: -60px;
 }
 
+.newslist{
+  min-height: 20px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.current-status{
+  font-weight: bold;
+}
+
+.homenewscontainer{
+  margin-top: 40px;
+}
+
+.savebutton{
+  margin-top: 40px !important;
+}
+
 .resize{
     max-height: 195px;
     overflow: hidden;
