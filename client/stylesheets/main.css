@@ -850,10 +850,20 @@ footer p {
   margin-bottom: -60px;
 }
 
+.newsposting {
+  max-height: 538px;
+  min-height: 538px;
+}
+
 .newslist{
-  min-height: 20px;
+  min-height: 56px;
   margin-top: 4px;
   margin-bottom: 4px;
+}
+
+.onhome, .offhome, .delete{
+  margin-top: 0px;
+  margin-bottom: 26px;
 }
 
 .current-status{
