@@ -7,7 +7,8 @@
       "font-awesome": {},
       "iron-router": {},
       "spin": {},
-      "accounts-ui-bootstrap-dropdown": {}
+      "accounts-ui-bootstrap-dropdown": {},
+      "accounts-entry": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -40,6 +41,11 @@
         "tag": "v0.8.3",
         "commit": "a7af8a52e4e74db020a69b158a8f992797b8b0b0"
       },
+      "accounts-entry": {
+        "git": "https://github.com/Differential/accounts-entry.git",
+        "tag": "v0.8.1",
+        "commit": "3102c0641cab394ce4c3e54b655c85ec1610c092"
+      },
       "build-fetcher": {
         "git": "https://github.com/mizzao/meteor-build-fetcher.git",
         "tag": "v0.2.0",
@@ -49,6 +55,16 @@
         "git": "https://github.com/EventedMind/iron-layout.git",
         "tag": "v0.2.0",
         "commit": "4a2d53e35ba036b0c189c7ceca34be494d4c6c97"
+      },
+      "accounts-t9n": {
+        "git": "https://github.com/softwarerero/meteor-accounts-t9n.git",
+        "tag": "v0.0.5",
+        "commit": "ad9539a8818049d5d9fa050d8b2a1f62706483b1"
+      },
+      "simple-form": {
+        "git": "https://github.com/Differential/simple-form.git",
+        "tag": "v0.1.8",
+        "commit": "1ea0d3621b333e6f24f37e0e93efd3c081068716"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
@@ -64,6 +80,11 @@
         "git": "https://github.com/EventedMind/iron-dynamic-template.git",
         "tag": "v0.2.1",
         "commit": "4dd1185c4d9d616c9abdb3f33e4a7d5a88db7e18"
+      },
+      "underscore-string-latest": {
+        "git": "https://github.com/TimHeckel/meteor-underscore-string.git",
+        "tag": "v2.3.3",
+        "commit": "4a5d70eee48fbd90a6e6fc78747250d704a0b3bb"
       }
     }
   }

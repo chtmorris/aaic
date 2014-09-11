@@ -1800,6 +1800,21 @@ border: 1px solid #fff;
 background-color: #f9f9f9;
 }
 
+
+/*----- LOGIN -----*/
+
+.login {
+  list-style-type: none;
+}
+
+.white {
+  background: white !important;
+}
+
+.entry-signup-cta{
+  display: none;
+}
+
 /*----- NOT FOUND -----*/
 
 .notfound {
