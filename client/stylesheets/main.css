@@ -125,7 +125,8 @@ footer p {
 #sidebar {
     position: fixed;
     width: 220px;
-    background: #e5e8eb;
+    /*background: #e5e8eb;*/
+    background: #F5F5F5;
     height: 100%;
     left: 0;
     font-family:'Raleway', sans-serif;
@@ -138,7 +139,14 @@ footer p {
     padding-bottom: 20%;
     padding-left: 30px;
     font-size: 25px;
+    margin-bottom: 80px;
+    margin-left: 10px;
 }
+
+#sidebar .navbar-brand img {
+    max-width: 150px;
+}
+
 #sidebar .navbar {
     border-radius: 0;
     background: transparent;
