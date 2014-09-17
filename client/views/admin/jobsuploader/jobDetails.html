@@ -1,0 +1,19 @@
+<template name="jobDetails">
+  <form>
+    <div class="col-md-5">
+      <p class="newslist">{{title}}</p>
+    </div>
+    <div class="col-md-2">
+      <p class="newslist current-status">{{homepage}}</p>
+    </div>
+    <div class="col-md-2">
+      <input type="submit" name="homepage" value="On homepage" class="btn btn-success onhome"/>
+    </div>
+    <div class="col-md-2">
+      <input type="submit" name="homepage" value="Off homepage" class="btn btn-warning offhome"/>
+    </div>
+    <div class="col-md-1">
+      <input type="submit" value="DELETE" class="btn btn-danger delete"/>
+    </div>
+  </form>
+</template>

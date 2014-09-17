@@ -1,0 +1,1 @@
+Template.homejobs.helpers({  jobs: function() {    return Jobs.find();  }});

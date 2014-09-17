@@ -1,0 +1,1 @@
+Template.shortjobposts.helpers({  jobs: function() {    return Jobs.find({homepage: "On homepage"});  }});

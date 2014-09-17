@@ -1,0 +1,51 @@
+<template name="jobsuploader">
+
+  <div id="container">
+    <section id="jobsuploads" class="">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="header-content">
+              <h2>Jobs uploader</h2>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-8">
+
+            <form>
+              <div class="form-group row">
+                  <div class="col-md-8">
+                      <input type="text" name="title" class="form-control cmform col-md-6" id="newstitle" placeholder="Jobs title">
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <div class="col-md-8">
+                      <input type="text" name="company" class="form-control cmform" id="newsdate" placeholder="Company">
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <div class="col-lg-11">
+                      <textarea class="form-control cmform" name="p1" id="news paragraph" placeholder="First paragraph" rows="5"></textarea>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <div class="col-lg-11">
+                      <textarea class="form-control cmform" name="p2" id="news paragraph" placeholder="Second paragraph" rows="5"></textarea>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <div class="col-lg-11">
+                      <textarea class="form-control cmform" name="p3" id="news paragraph" placeholder="Third paragraph" rows="5"></textarea>
+                  </div>
+              </div>
+              <br/>
+              <input type="submit" value="Add job post" class="btn btn-light big"/>
+            </form>
+
+          </div>
+      </div>
+
+      {{> homejobs}}
+
+    </section>
+  </div>
+
+</template>

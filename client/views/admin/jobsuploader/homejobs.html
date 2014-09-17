@@ -1,0 +1,16 @@
+<template name="homejobs">
+
+  <div class="row homenewscontainer">
+    <div class="col-md-12">
+      <div class="header-content">
+        <h3>Jobs on homepage</h3>
+      </div>
+
+        {{#each jobs}}
+          {{> jobDetails}}
+        {{/each}}
+
+    </div>
+  </div>
+
+</template>
