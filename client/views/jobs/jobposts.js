@@ -1,0 +1,1 @@
+Template.jobposts.helpers({  jobs: function() {    return Jobs.find();  }});

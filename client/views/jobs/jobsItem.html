@@ -1,0 +1,39 @@
+<template name="jobsItem">
+  <div class="col-md-6">
+      <div class="teams">
+          <div class="job-boarder">
+            <div class="jobsboard">
+              <h3>{{title}}</h3>
+              <span>{{company}}</span>
+              <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                          <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="shortcodes.html#{{_id}}" class="collapsed">
+                                job details
+                              </a>
+                          </h4>
+                      </div>
+                      <div id="{{_id}}" class="panel-collapse collapse" style="height: 0px;">
+                          <div class="panel-body">
+                          <p>
+                            {{p1}}
+                          </p>
+                          <p>
+                            {{p2}}
+                          </p>
+                          <p>
+                            {{p3}}
+                          </p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              <div class="pull-right">
+                <a class="btn btn-light small" href="mailto:apply@aaicgroup.com?Subject={{Title}}">Apply</a>
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
+</template>

@@ -1,1 +1,1 @@
-Meteor.publish('posts', function() {  return Posts.find();});
+Meteor.publish('posts', function() {  return Posts.find();});Meteor.publish('jobs', function() {  return Jobs.find();});
