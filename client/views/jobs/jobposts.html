@@ -11,7 +11,7 @@
         <div class="col-lg-12">
             <div class="row mg-bt-40">
 
-                <div class="col-md-6">
+                <!-- <div class="col-md-6">
                     <div class="teams">
                         <div class="job-boarder">
                           <div class="jobsboard">
@@ -52,7 +52,12 @@
                           </div>
                       </div>
                     </div>
-                </div>
+                </div> -->
+
+
+                {{#each jobs}}
+                  {{> jobsItem}}
+                {{/each}}
 
 
             </div>
