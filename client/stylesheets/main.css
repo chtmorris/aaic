@@ -514,7 +514,7 @@ footer p {
     height: 100%;
     left: 0;
     top: 0;
-    background:rgba(60, 60, 60, 0.7);
+    background:rgba(60, 60, 60, 0.3);
 }
 
  .portfolio {
@@ -568,10 +568,10 @@ footer p {
     overflow: hidden;
     color: rgba(255, 255, 255, 0.0);
     background: rgba(0, 0, 0, 0.0);
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
     letter-spacing: 0.4em;
-    line-height: 25px;
+    line-height: 30px;
     text-transform: uppercase;
     visibility: visible;
     -webkit-transition: all .3s ease-in-out;
@@ -634,8 +634,8 @@ footer p {
 
 .weak-text {
   font-weight: 200;
-  font-size: 10px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 20px;
   text-transform: lowercase;
   padding-top: 10px;
 }
