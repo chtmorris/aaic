@@ -1,4 +1,5 @@
-AAIC Ventures
+AAIC Ventures - www.aaicventures.com
 ====
 
-AAIC Ventures site built in Meteor
+This is the corporate website for AAIC Ventures, a venture captial firm based in Hong Kong.  
+The site is built in Meteor.
