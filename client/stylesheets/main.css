@@ -213,6 +213,15 @@ footer p {
 #container section.odd {
     background: #eceff1;
 }
+#container section.background-pic {
+    background-image: url("poss/background.png");
+}
+#container section.background-pic2 {
+    background-image: url("poss/background3.png");
+    background-size: 100%;
+    /*width: 100%;
+    height: 100%;*/
+}
 .mg-bt-80 {
     margin-bottom: 80px;
 }
@@ -695,11 +704,21 @@ footer p {
 /* ====== About ====== */
 
 .AAICinfo {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: black;
 }
 
 .AAICinfoEnd {
-  margin-bottom: 50px;
+  margin-bottom: 300px;
+  font-size: 18px;
+  color: black;
+}
+
+.AAICinfoEnd2 {
+  margin-bottom: 310px;
+  font-size: 18px;
+  color: black;
 }
 
 .about .teams {
@@ -849,10 +868,12 @@ footer p {
 .read-stories{
     margin-top: -120px !important;
     background: #eceff1 !important;
+    font-size: 18px;
 }
 
 .find-jobs{
     margin-top: -125px !important;
+    font-size: 18px;
 }
 
 .blog-front article {
