@@ -154,6 +154,16 @@ footer p {
     max-width: 150px;
 }
 
+/*MEDIA QUERY LOGO*/
+@media (max-width: 900px) {
+  #sidebar .navbar-brand img {
+    display: none;
+  }
+  #sidebar .navbar-brand {
+    margin-bottom: 0;
+  }
+}
+
 #sidebar .navbar {
     border-radius: 0;
     background: transparent;
@@ -219,9 +229,8 @@ footer p {
 #container section.background-pic2 {
     background-image: url("poss/background3.png");
     background-size: 100%;
-    /*width: 100%;
-    height: 100%;*/
 }
+
 .mg-bt-80 {
     margin-bottom: 80px;
 }
@@ -370,15 +379,11 @@ footer p {
     -moz-transform: rotateY(360deg);
     /* Firefox */
 }
-/*
-    [PAGES STYLE]
-*/
 
 /* ====== HOME ====== */
- #container section.home {
-    padding: 0;
-}
-.home .bg-parallax {
+
+.home-pic {
+  background-image: url(poss/webhome.png);
     background-repeat: no-repeat;
     background-size: cover;
     /*background-attachment: fixed;*/
@@ -388,12 +393,39 @@ footer p {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    max-width: 100%;
 }
 
+@media (max-width: 1100px) {
+  .home-pic {
+    max-height: 80%;
+    margin-top: 100px;
+  }
+}
 
-/*NOTE HEIGHT of below need to uncomment soon!!!*/
+@media (max-width: 800px) {
+  .home-pic {
+    max-height: 58%;
+    margin-top: 100px;
+  }
+}
 
+@media (max-width: 500px) {
+  .home-pic {
+    max-height: 40%;
+    margin-top: 200px;
+  }
+}
 
+@media (max-width: 1000px) and (min-width: 700px) {
+  .navbar {
+    display: none;
+  }
+}
+
+ #container section.home {
+    padding: 0;
+}
 
 .home .slide-filter {
     display: block;
@@ -466,6 +498,8 @@ footer p {
 .home .slides-navigation a.prev {
     right: 42px;
 }
+
+
 /* ====== Services ====== */
 .skills-title{
   padding-left: 15px;
@@ -715,10 +749,28 @@ footer p {
   color: black;
 }
 
+@media (max-width: 1100px) {
+  .AAICinfoEnd {
+    margin-bottom: 50px;
+  }
+}
+
 .AAICinfoEnd2 {
   margin-bottom: 310px;
   font-size: 18px;
   color: black;
+}
+
+@media (max-width: 1400px) {
+  .AAICinfoEnd2 {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .AAICinfoEnd2 {
+    margin-bottom: 50px;
+  }
 }
 
 .about .teams {
@@ -785,6 +837,25 @@ footer p {
 .about .teams .desc {
     padding:25px;
     background: #f7f8f9;
+    min-height: 523px;
+}
+
+@media (max-width:1300px) and (min-width:1200px){
+  .about .teams .desc {
+      min-height: 570px;
+  }
+}
+
+@media (max-width:1200px) and (min-width:1100px){
+  .about .teams .desc {
+      min-height: 681px;
+  }
+}
+
+@media (max-width:1100px) and (min-width:990px){
+  .about .teams .desc {
+      min-height: 830px;
+  }
 }
 
 .about .teams .job-boarder {
@@ -890,6 +961,13 @@ footer p {
 .newsposting {
   max-height: 538px;
   min-height: 538px;
+}
+
+@media (max-width: 1200px) {
+  .newsposting {
+    max-height: 638px;
+    min-height: 638px;
+  }
 }
 
 .newslist{
