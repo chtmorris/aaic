@@ -154,6 +154,16 @@ footer p {
     max-width: 150px;
 }
 
+/*MEDIA QUERY LOGO*/
+@media (max-width: 900px) {
+  #sidebar .navbar-brand img {
+    display: none;
+  }
+  #sidebar .navbar-brand {
+    margin-bottom: 0;
+  }
+}
+
 #sidebar .navbar {
     border-radius: 0;
     background: transparent;
@@ -370,15 +380,11 @@ footer p {
     -moz-transform: rotateY(360deg);
     /* Firefox */
 }
-/*
-    [PAGES STYLE]
-*/
 
 /* ====== HOME ====== */
- #container section.home {
-    padding: 0;
-}
-.home .bg-parallax {
+
+.home-pic {
+  background-image: url(poss/webhome.png);
     background-repeat: no-repeat;
     background-size: cover;
     /*background-attachment: fixed;*/
@@ -388,12 +394,39 @@ footer p {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    max-width: 100%;
 }
 
+@media (max-width: 1100px) {
+  .home-pic {
+    max-height: 80%;
+    margin-top: 100px;
+  }
+}
 
-/*NOTE HEIGHT of below need to uncomment soon!!!*/
+@media (max-width: 800px) {
+  .home-pic {
+    max-height: 58%;
+    margin-top: 100px;
+  }
+}
 
+@media (max-width: 500px) {
+  .home-pic {
+    max-height: 40%;
+    margin-top: 200px;
+  }
+}
 
+@media (max-width: 1000px) and (min-width: 700px) {
+  .navbar {
+    display: none;
+  }
+}
+
+ #container section.home {
+    padding: 0;
+}
 
 .home .slide-filter {
     display: block;
@@ -466,6 +499,8 @@ footer p {
 .home .slides-navigation a.prev {
     right: 42px;
 }
+
+
 /* ====== Services ====== */
 .skills-title{
   padding-left: 15px;
