@@ -761,6 +761,12 @@ footer p {
   color: black;
 }
 
+@media (min-width: 1800px) {
+  .AAICinfoEnd2 {
+    margin-bottom: 500px;
+  }
+}
+
 @media (max-width: 1400px) {
   .AAICinfoEnd2 {
     margin-bottom: 100px;
